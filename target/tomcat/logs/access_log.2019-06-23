@@ -1,0 +1,17 @@
+0:0:0:0:0:0:0:1 - - [23/Jun/2019:09:38:21 +0800] "GET /doIndexUI.do HTTP/1.1" 304 - http-bio-8091-exec-1 608
+0:0:0:0:0:0:0:1 - - [23/Jun/2019:09:38:21 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8091-exec-3 8
+0:0:0:0:0:0:0:1 - - [23/Jun/2019:09:38:25 +0800] "GET /role/doRoleListUI.do HTTP/1.1" 200 5229 http-bio-8091-exec-4 108
+0:0:0:0:0:0:0:1 - - [23/Jun/2019:09:38:25 +0800] "GET /doPageUI.do HTTP/1.1" 200 1436 http-bio-8091-exec-5 36
+0:0:0:0:0:0:0:1 - - [23/Jun/2019:09:38:25 +0800] "GET /role/doFindPageObjects.do?pageCurrent=1 HTTP/1.1" 404 949 http-bio-8091-exec-6 8
+0:0:0:0:0:0:0:1 - - [23/Jun/2019:10:32:17 +0800] "GET /doIndexUI.do HTTP/1.1" 304 - http-bio-8091-exec-1 153
+0:0:0:0:0:0:0:1 - - [23/Jun/2019:10:32:23 +0800] "GET /role/doFindPageObjects.do?pageCurrent=1 HTTP/1.1" 200 435 http-bio-8091-exec-3 869
+0:0:0:0:0:0:0:1 - - [23/Jun/2019:10:33:47 +0800] "GET /doIndexUI.do HTTP/1.1" 304 - http-bio-8091-exec-5 9
+0:0:0:0:0:0:0:1 - - [23/Jun/2019:10:33:50 +0800] "GET /role/doFindPageObjects.do?pageCurrent=1 HTTP/1.1" 200 435 http-bio-8091-exec-7 22
+0:0:0:0:0:0:0:1 - - [23/Jun/2019:10:34:09 +0800] "POST /role/doDeleteObject.do HTTP/1.1" 404 949 http-bio-8091-exec-8 10
+0:0:0:0:0:0:0:1 - - [23/Jun/2019:10:34:15 +0800] "GET /role/doFindObjectById.do?id=46 HTTP/1.1" 404 949 http-bio-8091-exec-9 4
+0:0:0:0:0:0:0:1 - - [23/Jun/2019:10:34:17 +0800] "GET /role/doRoleEditUI.do HTTP/1.1" 404 949 http-bio-8091-exec-10 3
+0:0:0:0:0:0:0:1 - - [23/Jun/2019:18:57:08 +0800] "GET /doIndexUI.do HTTP/1.1" 304 - http-bio-8091-exec-1 186
+0:0:0:0:0:0:0:1 - - [23/Jun/2019:18:57:16 +0800] "GET /user/doUserListUI.do HTTP/1.1" 404 949 http-bio-8091-exec-3 10
+0:0:0:0:0:0:0:1 - - [23/Jun/2019:18:57:21 +0800] "GET /role/doFindPageObjects.do?pageCurrent=1 HTTP/1.1" 200 435 http-bio-8091-exec-4 801
+0:0:0:0:0:0:0:1 - - [23/Jun/2019:18:57:27 +0800] "POST /role/doDeleteObject.do HTTP/1.1" 200 56 http-bio-8091-exec-5 204
+0:0:0:0:0:0:0:1 - - [23/Jun/2019:18:57:28 +0800] "GET /role/doFindPageObjects.do?pageCurrent=1 HTTP/1.1" 200 276 http-bio-8091-exec-6 11

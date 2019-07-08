@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--mybatis中的映射文件：内部要定义sql映射-->
+<mapper namespace="com.jt.sys.mapper.SysRoleMapper">
+
+    <sql id="query">
+        <where>
+            <if test="username!=null and username!=''">
+                username like concat("%",#{username},"%")
+            </if>
+        </where>
+    </sql>
+
+
+    <select id="getRowCount" resultType="int">
+        select count(*) from sys_roles
+        <include refid="query"/>
+    </select>
+
+
+
+    <select id="findPageObjects" resultType="com.jt.sys.entity.SysRole">
+        select * from sys_roles
+        <include refid="query"/>
+        order by createdTime desc
+        limit #{startIndex},#{pageSize}
+    </select>
+
+    <delete id="deleteObject" parameterType="int">
+        delete from sys_roles where id=#{id}
+    </delete>
+
+    <insert id="insertObject" parameterType="com.jt.sys.entity.SysRole"
+                              useGeneratedKeys="true" keyProperty="id">
+        insert into sys_roles(id,name,note,createdTime,modifiedTime,createdUser,modifiedUser)
+        values
+        (null,#{name},#{note},now(),now(),
+         #{createdUser},#{modifiedUser})
+    </insert>
+
+
+
+
+</mapper>
