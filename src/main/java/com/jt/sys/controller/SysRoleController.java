@@ -71,7 +71,12 @@ public class SysRoleController {
     }
 
 
-
+    //http://localhost:8091/role/doFindObjects.do
+    @RequestMapping("/doFindObjects")
+    @ResponseBody
+    public JsonResult doFindObjects(){
+        return new JsonResult(sysRoleService.findObjects());
+    }
 
 
 

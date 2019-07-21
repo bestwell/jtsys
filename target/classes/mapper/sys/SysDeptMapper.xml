@@ -40,4 +40,12 @@
         where id=#{id}
  </update>
 
+
+    <select id="findById"
+            resultType="com.jt.common.vo.SysDept">
+           select *
+           from sys_depts
+           where id=#{id}
+    </select>
+
 </mapper>

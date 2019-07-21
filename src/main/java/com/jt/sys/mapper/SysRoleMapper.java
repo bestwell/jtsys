@@ -1,5 +1,6 @@
 package com.jt.sys.mapper;
 
+import com.jt.common.vo.CheckBox;
 import com.jt.sys.entity.SysRole;
 import org.apache.ibatis.annotations.Param;
 
@@ -20,4 +21,6 @@ public interface SysRoleMapper {
     int insertObject(SysRole entity);
 
     SysRole findObjectById(Integer id);
+
+    List<CheckBox> findObjects();
 }

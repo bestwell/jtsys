@@ -1,6 +1,7 @@
 package com.jt.sys.service;
 
 import com.jt.common.exception.ServiceException;
+import com.jt.common.vo.CheckBox;
 import com.jt.common.vo.PageObject;
 import com.jt.sys.entity.SysRole;
 import com.jt.sys.mapper.SysRoleMapper;
@@ -109,5 +110,10 @@ public class SysRoleServiceImpl implements SysRoleService{
         map.put("role",role);
         map.put("menuIds",menuIds);
         return map;
+    }
+
+    @Override
+    public List<CheckBox> findObjects() {
+        return sysRoleMapper.findObjects();
     }
 }
