@@ -21,6 +21,7 @@ com\jt\sys\service\SysMenuServiceImpl.class
 com\jt\sys\controller\SysRoleController.class
 com\jt\sys\service\SysDeptService.class
 com\jt\common\vo\CheckBox.class
+com\jt\sys\service\realm\ShiroUserRealm.class
 com\jt\sys\entity\SysMenu.class
 com\jt\common\vo\Node.class
 com\jt\sys\controller\SysUserController.class

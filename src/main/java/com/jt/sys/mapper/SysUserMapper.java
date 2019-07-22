@@ -20,4 +20,10 @@ public interface SysUserMapper {
     int insertObject(SysUser entity);
 
 
+    SysUserDeptResult findObjectById(Integer userId);
+
+
+    int updateObject(SysUser entity);
+
+    SysUser findUserByUsername(String username);
 }

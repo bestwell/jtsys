@@ -16,6 +16,7 @@ E:\ideaPlace\jtsys\src\main\java\com\jt\sys\service\SysRoleServiceImpl.java
 E:\ideaPlace\jtsys\src\main\java\com\jt\sys\controller\SysLogController.java
 E:\ideaPlace\jtsys\src\main\java\com\jt\sys\service\SysLogServiceImpl.java
 E:\ideaPlace\jtsys\src\main\java\com\jt\sys\mapper\SysMenuMapper.java
+E:\ideaPlace\jtsys\src\main\java\com\jt\sys\service\realm\ShiroUserRealm.java
 E:\ideaPlace\jtsys\src\main\java\com\jt\common\vo\SysUserDeptResult.java
 E:\ideaPlace\jtsys\src\main\java\com\jt\sys\mapper\SysRoleMenuMapper.java
 E:\ideaPlace\jtsys\src\main\java\com\jt\sys\mapper\SysUserRoleMapper.java

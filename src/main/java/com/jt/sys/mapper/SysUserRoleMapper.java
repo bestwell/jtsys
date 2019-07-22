@@ -2,9 +2,15 @@ package com.jt.sys.mapper;
 
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+
 public interface SysUserRoleMapper {
     //基于角色id删除用户和角色之间的关系
     int deleteObjectsByRoleId(Integer roleId);
 
-    void insertObject(@Param("id") Integer id,@Param("roleIds") Integer[] roleIds);
+    int insertObject(@Param("userId") Integer userId,@Param("roleIds") Integer[] roleIds);
+
+    List<Integer> findRoleIdsByUserId(Integer userId);
+
+    int deleteObjectsByUserId(Integer id);
 }

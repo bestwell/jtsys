@@ -16,4 +16,6 @@ public interface SysRoleMenuMapper {
                       @Param("menuIds") Integer[] menuIds);
 
     List<Integer> findMenuIdsByRoleId(Integer roleId);
+
+    List<Integer> findMenuIdsByRoleIds(Integer[] toArray);
 }

@@ -20,4 +20,7 @@ public interface SysMenuMapper {
     int insertObject(SysMenu entity);
     //实现菜单信息更新
     int updateObject(SysMenu entity);
+
+    List<String> findPermisssions(Integer[] toArray);
+
 }

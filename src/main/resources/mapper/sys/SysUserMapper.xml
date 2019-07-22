@@ -53,4 +53,46 @@
       now(),now(),#{createdUser},#{modifiedUser})
     </insert>
 
+
+
+    <select id="findObjectById" parameterType="int" resultMap="sysUserMap">
+        select * from sys_users where id = #{userId}
+    </select>
+
+    <update id="updateObject" parameterType="com.jt.sys.entity.SysUser">
+        update sys_users
+        <set>
+            <if test="username!=null and username!=''">
+                username=#{username},
+            </if>
+            <if test="password!=null and password!=''">
+                password=#{password},
+                salt=#{salt},
+            </if>
+            <if test="email!=null and email!=''">
+                email=#{email},
+            </if>
+            <if test="mobile!=null and mobile!=''">
+                mobile=#{mobile},
+            </if>
+            <if test="deptId!=null and deptId!=''">
+                deptId=#{deptId},
+            </if>
+
+            <if test="modifiedUser!=null and modifiedUser!=''">
+                modifiedUser=#{modifiedUser},
+            </if>
+            modifiedTime=now()
+        </set>
+        where id=#{id}
+    </update>
+
+
+    <select id="findUserByUsername"
+            resultType="com.jt.sys.entity.SysUser">
+      select *
+      from sys_users
+      where username=#{username}
+   </select>
+
 </mapper>

@@ -31,6 +31,7 @@
     <import resource="classpath:spring-datasource.xml"/>
     <import resource="classpath:spring-mvc.xml"/>
     <import resource="classpath:spring-mybatis.xml"/>
+    <import resource="classpath:spring-shiro.xml"/>
 
     <!--启用AOP注解的应用方式（自动为目标对象创建代理对象）-->
     <aop:aspectj-autoproxy/>
